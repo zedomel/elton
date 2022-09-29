@@ -220,6 +220,7 @@ public class CmdInteractions extends CmdTabularWriterParams {
 
                     @Override
                     public void severe(LogContext ctx, String message) {
+                        getStderr().println(message);
                         reportProgress();
                     }
 
